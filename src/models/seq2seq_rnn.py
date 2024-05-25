@@ -106,7 +106,3 @@ class Seq2SeqRNN(torch.nn.Module):
             predicted=predicted, actual=actuals, target_tokenizer=self.target_tokenizer
         )
         return bleu_score, actual_sentences, predicted_sentences
-
-
-
-
